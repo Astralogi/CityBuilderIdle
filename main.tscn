@@ -1,0 +1,32 @@
+[gd_scene load_steps=2 format=3 uid="uid://by7m1i0g1snee"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_1b2dj"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_1b2dj")
+
+[node name="FoodLabel" type="Label" parent="."]
+offset_right = 120.0
+offset_bottom = 50.0
+text = "Food"
+
+[node name="MaterialLabel" type="Label" parent="."]
+offset_left = 120.0
+offset_right = 240.0
+offset_bottom = 50.0
+text = "Materials"
+
+[node name="ResearchLabel" type="Label" parent="."]
+offset_left = 240.0
+offset_right = 360.0
+offset_bottom = 50.0
+text = "Research"
+
+[node name="Food" type="Button" parent="."]
+offset_left = 200.0
+offset_top = 350.0
+offset_right = 290.0
+offset_bottom = 440.0
+text = "Food Level 1"
+
+[connection signal="pressed" from="Food" to="." method="_on_food_pressed"]
